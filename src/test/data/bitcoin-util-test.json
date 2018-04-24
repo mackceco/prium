@@ -1,0 +1,40 @@
+[
+  { "exec": "./prium-tx",
+    "args": ["-create"],
+    "output_cmp": "blanktx.hex"
+  },
+  { "exec": "./prium-tx",
+    "args": ["-"],
+    "input": "blanktx.hex",
+    "output_cmp": "blanktx.hex"
+  },
+  { "exec": "./prium-tx",
+    "args": ["-", "delin=1"],
+    "input": "tx394b54bb.hex",
+    "output_cmp": "tt-delin1-out.hex"
+  },
+  { "exec": "./prium-tx",
+    "args": ["-", "delin=31"],
+    "input": "tx394b54bb.hex",
+    "return_code": 1
+  },
+  { "exec": "./prium-tx",
+    "args": ["-", "delout=1"],
+    "input": "tx394b54bb.hex",
+    "output_cmp": "tt-delout1-out.hex"
+  },
+  { "exec": "./prium-tx",
+    "args": ["-", "delout=2"],
+    "input": "tx394b54bb.hex",
+    "return_code": 1
+  },
+  { "exec": "./prium-tx",
+    "args": ["-", "locktime=317000"],
+    "input": "tx394b54bb.hex",
+    "output_cmp": "tt-locktime317000-out.hex"
+  },
+  { "exec": "./prium-tx",
+    "args": ["-create", "outscript=0:"],
+    "output_cmp": "txcreate2.hex"
+  }
+]

@@ -1,0 +1,26 @@
+[Unit]
+Description=prium's distributed currency daemon
+After=network.target
+
+[Service]
+User=prium
+Group=prium
+
+Type=forking
+PIDFile=/var/lib/priumd/priumd.pid
+
+ExecStart=/usr/bin/priumd -daemon -pid=/var/lib/priumd/priumd.pid \
+          -conf=/etc/prium/prium.conf -datadir=/var/lib/priumd
+
+ExecStop=-/usr/bin/prium-cli -conf=/etc/prium/prium.conf \
+         -datadir=/var/lib/priumd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

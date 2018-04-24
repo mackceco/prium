@@ -1,0 +1,30 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/prium_bg.qm</file>
+        <file alias="ca">locale/prium_ca.qm</file>
+        <file alias="cs">locale/prium_cs.qm</file>
+        <file alias="da">locale/prium_da.qm</file>
+        <file alias="de">locale/prium_de.qm</file>
+        <file alias="en">locale/prium_en.qm</file>
+        <file alias="en_US">locale/prium_en_US.qm</file>
+        <file alias="es">locale/prium_es.qm</file>
+        <file alias="fi">locale/prium_fi.qm</file>
+        <file alias="fr_FR">locale/prium_fr_FR.qm</file>
+        <file alias="hr">locale/prium_hr.qm</file>
+        <file alias="it">locale/prium_it.qm</file>
+        <file alias="ja">locale/prium_ja.qm</file>
+        <file alias="ko_KR">locale/prium_ko_KR.qm</file>
+        <file alias="nl">locale/prium_nl.qm</file>
+        <file alias="pl">locale/prium_pl.qm</file>
+        <file alias="pt">locale/prium_pt.qm</file>
+        <file alias="pt_BR">locale/prium_pt_BR.qm</file>
+        <file alias="ro_RO">locale/prium_ro_RO.qm</file>
+        <file alias="ru">locale/prium_ru.qm</file>
+        <file alias="sk">locale/prium_sk.qm</file>
+        <file alias="sv">locale/prium_sv.qm</file>
+        <file alias="tr">locale/prium_tr.qm</file>
+        <file alias="uk">locale/prium_uk.qm</file>
+        <file alias="zh_CN">locale/prium_zh_CN.qm</file>
+        <file alias="zh_TW">locale/prium_zh_TW.qm</file>
+    </qresource>
+</RCC>
